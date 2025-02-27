@@ -17,9 +17,8 @@ AIRTABLE_LOGO_FIELD = 'Logo'
 AIRTABLE_REFORMATTED_FIELD = 'Logo (Reformatted)'
 AIRTABLE_VIEW_NAME = 'IC 2025 Full Partner List'
 
-# Ensure logos directory exists
-LOGOS_DIR = 'logos'
-os.makedirs(LOGOS_DIR, exist_ok=True)
+# Create a directory to store logos
+os.makedirs('logos', exist_ok=True)
 
 # Initialize Airtable API
 api = Api(AIRTABLE_API_KEY)
